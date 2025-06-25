@@ -1,0 +1,195 @@
+/* Emergency checklist */
+.emergency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 32px;
+}
+
+.emergency-item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 8px #0001;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.emergency-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.emergency-item-content {
+  flex: 1;
+}
+
+.emergency-item-content h3 {
+  font-size: 32px;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.emergency-item-content p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Emergency contact */
+.emergency-contact {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 32px auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.emergency-contact h2 {
+  font-size: 40px;
+  margin: 0 0 24px 0;
+  color: #222;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.contact-item {
+  background: #f6f3ee;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.contact-item p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #fff;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  /* Homepage exclusive section – only keep RWD here  */
+  .map-warning-section {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 4px;
+    margin-bottom: 12px;
+  }
+  .map-card {
+    padding: 10px 4px 10px 4px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 100%;
+  }
+  .map-search {
+    top: 10px;
+    left: 10px;
+    padding: 2px 6px;
+    border-radius: 6px;
+  }
+
+  .warning-cards {
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+  }
+  .warning-card {
+    min-width: unset;
+    max-width: 100%;
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-size: 0.98rem;
+  }
+  .warning-card.level {
+    max-width: 100%;
+    gap: 8px;
+  }
+  .warning-card.info {
+    max-width: 100%;
+    gap: 8px;
+  }
+  .emergency-checklist-section {
+    padding: 0 4px;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+  .checklist-card {
+    padding: 12px 4px;
+    border-radius: 10px;
+  }
+  .checklist-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .check-item {
+    padding: 10px 8px 10px 8px;
+    border-radius: 8px;
+    font-size: 0.98rem;
+  }
+  .checkmark {
+    width: 24px;
+    height: 24px;
+    font-size: 1.1rem;
+    margin-right: 8px;
+    border-radius: 6px;
+  }
+  .check-title {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,147 @@
+/* Main title section */
+.notification-title {
+  text-align: center;
+  margin: 48px 0 18px 0;
+}
+.notification-title h1 {
+  font-size: 80px;
+  font-family: "Bakbak One", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.notification-title p {
+  color: #444;
+  font-size: 1.15rem;
+  margin-bottom: 0;
+}
+
+/* Green underline */
+.notification-underline {
+  width: 40px;
+  height: 4px;
+  background: #00891b;
+  border-radius: 2px;
+  margin: 60px auto 20px auto;
+}
+
+/* Push notification section */
+.push-section {
+  text-align: center;
+  margin: 0 auto 80px auto;
+  max-width: 600px;
+}
+.push-section h2 {
+  font-size: 2.2rem;
+  font-family: "Bakbak One", Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.push-location-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+.push-location-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 18px;
+}
+.push-location-input input[type="text"] {
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 6px 0 0 6px;
+  border: 1.5px solid #ccc;
+  outline: none;
+  width: 120px;
+}
+.push-location-input button {
+  font-size: 1.1rem;
+  padding: 8px 14px;
+  border-radius: 0 6px 6px 0;
+  border: 1.5px solid #ccc;
+  border-left: none;
+  background: #f6f3ee;
+  cursor: pointer;
+}
+
+.push-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #0001;
+  border: 1.5px solid #e5e1d8;
+  padding: 40px 24px 36px 24px;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+.push-card strong {
+  font-weight: bold;
+}
+.push-yes-btn {
+  margin-top: 18px;
+  background: #00891b;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 10px 38px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.push-yes-btn:hover {
+  background: #00891b;
+}
+
+@media (max-width: 768px) {
+  .notification-title {
+    margin: 24px 0 10px 0;
+  }
+  .notification-title h1 {
+    font-size: 55px;
+    margin-bottom: 8px;
+  }
+  .notification-title p {
+    font-size: 1rem;
+  }
+  .notification-underline {
+    margin: 30px auto 10px auto;
+  }
+  .push-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .push-card {
+    padding: 16px 6px 16px 6px;
+    border-radius: 10px;
+    font-size: 0.98rem;
+    max-width: 100%;
+  }
+  .push-yes-btn {
+    padding: 8px 24px;
+    font-size: 1rem;
+    border-radius: 18px;
+  }
+  .push-location-input input[type="text"] {
+    font-size: 1rem;
+    padding: 6px 10px;
+    width: 90px;
+  }
+  .push-location-input button {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  .info-underline,
+  .tips-underline,
+  .notification-underline {
+    margin: 30px auto 10px auto;
+  }
+}
+
+body {
+  line-height: 1.3;
+}

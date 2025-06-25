@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/general/css/style.css" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <title>FIRRE - Wildfire Safety</title>
+    <!-- Google Fonts Bakbak One -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script
+    src="`YOUR_API_KEY_HERE`"
+    async
+    defer
+  ></script>
+  <body>
+    <!-- Marquee section -->
+    <div class="marquee-container" role="region" aria-label="wildfire news">
+      <div class="marquee" aria-live="polite">
+        <span
+          >🔥 Current Wildfire Alerts : Bunyaville Conservation Park - AVOID
+          SMOKE at 4:20pm 9 May 2025, Taunton near Agnes Water - AVOID SMOKE at
+          4:20pm 9 May 2025</span
+        >
+      </div>
+    </div>
+
+    <!-- Mobile emergency info -->
+    <div class="mobile-report-info">Emergencies report 000</div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="/image/Group 385.png" alt="FIRRE logo" class="logo-img" />
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="home-link">Home</a>
+        <a href="information.html" class="home-link">Wildfire information</a>
+        <a href="notification.html" class="home-link">Get Notification</a>
+        <a href="#emergency_contact" class="home-link"
+          ><button class="report-btn">Emergencies report 000</button></a
+        >
+      </nav>
+      <button class="menu-btn" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Main title -->
+    <section class="main-title">
+      <h1>
+        <span class="title-line"
+          >REAL-TIME WILDFIRE ALERTS & <br />SAFETY GUIDE FOR BRISBANE
+        </span>
+      </h1>
+      <p>
+        Real-time wildfire alerts and safety guidance for Brisbane residents.
+      </p>
+    </section>
+    <div class="map-search">
+      <label for="postcodeInput" class="sr-only">Postcode</label>
+      <input type="text" id="postcodeInput" placeholder="Postcode" />
+      <button class="search-btn" id="searchBtn">
+        <img
+          src="/image/Union.png"
+          alt="Search button"
+          style="width: 1.3em; height: 1.3em; vertical-align: middle"
+        />
+      </button>
+    </div>
+    <section class="map-warning-section">
+      <div class="map-card">
+        <div
+          id="map"
+          style="
+            width: 100%;
+            height: 400px;
+            border-radius: 16px;
+            overflow: hidden;
+          "
+        ></div>
+      </div>
+      <div class="warning-cards">
+        <div class="warning-card level">
+          <div class="warning-card-content">
+            <div class="warning-card-title">Warning Level 2: Advice</div>
+            <div class="warning-card-main">
+              <img
+                src="/image/advice.png"
+                alt="Warning icon"
+                class="warning-icon"
+              />
+              <span class="warning-card-num">2</span>
+            </div>
+          </div>
+        </div>
+        <div class="warning-card info">
+          <div class="warning-card-content">
+            <div class="warning-card-row">
+              <span class="warning-dot"></span>
+              <span class="warning-card-time">4:20pm 9 May 2025</span>
+            </div>
+            <div class="warning-card-title">Bunyaville Conservation Park</div>
+            <div class="warning-card-desc">AVOID SMOKE</div>
+            <a class="warning-card-more" href="#">More</a>
+          </div>
+        </div>
+        <div class="warning-card info">
+          <div class="warning-card-content">
+            <div class="warning-card-row">
+              <span class="warning-dot"></span>
+              <span class="warning-card-time">4:20pm 9 May 2025</span>
+            </div>
+            <div class="warning-card-title">Taunton near Agnes Water</div>
+            <div class="warning-card-desc">AVOID SMOKE</div>
+            <a class="warning-card-more" href="#">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency checklist -->
+    <section class="emergency-checklist-section">
+      <div class="checklist-title">
+        <div class="checklist-underline"></div>
+        <h2>Emergency checklist</h2>
+      </div>
+      <p class="checklist-desc">
+        Get ready for bushfire season with these four essential steps — from
+        home prep to staying informed. <br />Tick off each item to ensure you're
+        wildfire-ready.
+      </p>
+      <div class="checklist-card">
+        <div class="checklist-grid" role="list">
+          <div
+            class="check-item"
+            role="checkbox"
+            aria-checked="false"
+            tabindex="0"
+          >
+            <span class="checkmark"></span>
+            <div>
+              <div class="check-title">Emergency Kit Prepared</div>
+              <div class="check-desc">
+                Pack essential supplies: water, food, torch, battery-powered
+                radio, medications, and important documents.
+              </div>
+            </div>
+          </div>
+          <div
+            class="check-item"
+            role="checkbox"
+            aria-checked="false"
+            tabindex="0"
+          >
+            <span class="checkmark"></span>
+            <div>
+              <div class="check-title">Bushfire Survival Plan</div>
+              <div class="check-desc">
+                Have a written and practiced bushfire survival plan for your
+                family, including evacuation routes and meeting points.
+              </div>
+            </div>
+          </div>
+          <div
+            class="check-item"
+            role="checkbox"
+            aria-checked="false"
+            tabindex="0"
+          >
+            <span class="checkmark"></span>
+            <div>
+              <div class="check-title">Home Preparation</div>
+              <div class="check-desc">
+                Clear gutters, remove flammable materials from around your home,
+                and seal vents to prevent ember entry.
+              </div>
+            </div>
+          </div>
+          <div
+            class="check-item"
+            role="checkbox"
+            aria-checked="false"
+            tabindex="0"
+          >
+            <span class="checkmark"></span>
+            <div>
+              <div class="check-title">Evacuation Route Confirmed</div>
+              <div class="check-desc">
+                Know the safest route out and prepare your vehicle for a quick
+                departure.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency contact -->
+    <section id="emergency_contact" class="emergency-contact-section">
+      <div class="contact-title-block">
+        <div class="contact-underline"></div>
+        <h2>Emergency contact</h2>
+      </div>
+      <p class="contact-desc">
+        Stay safe. If you are facing a bushfire or emergency situation, these
+        services are here to help you with alerts, advice, and urgent support.
+      </p>
+      <div class="contact-card-list">
+        <div class="contact-card">
+          <div class="contact-title">Emergency Services – 000</div>
+          <div class="contact-desc">
+            For life-threatening emergencies including fire, police, or
+            ambulance.Dial 000 immediately and follow operator instructions.
+            Available 24/7.
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-title">QFES Bushfire Information</div>
+          <div class="contact-desc">
+            Visit the QFES website or call 13 QGOV (13 74 68) for updates. Stay
+            informed about bushfire warnings, evacuation advice, and fire bans.
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-title">Weather Alerts – BOM</div>
+          <div class="contact-desc">
+            Check BoM for severe weather warnings, fire danger ratings, and
+            forecast updates. Website: bom.gov.au or call 1300 659 219.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="information.html">Wildfire information</a>
+        <a href="notification.html">Get Notification</a>
+        Privacy Policy
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-acknowledgement">
+        <strong>Cultural acknowledgement</strong><br />
+        We acknowledge the Jagera people and the Turrbal people as the
+        Traditional Custodians of Meanjin (Brisbane) and their connections to
+        land, sea and community.
+      </div>
+      <p class="footer-copy">© FIRRE 2025</p>
+    </footer>
+
+    <!-- Side menu -->
+    <div class="side-menu" id="sideMenu">
+      <div class="side-menu-header">
+        <img
+          src="/image/Group 385.png"
+          alt="FIRRE side menu logo"
+          class="side-logo"
+        />
+        <button class="close-btn" id="closeMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="side-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="information.html">Wildfire Information</a>
+        <a href="notification.html">Get Notification</a>
+      </nav>
+    </div>
+
+    <script src="/general/js/json.js"></script>
+    <script
+      src="https://cdn.userway.org/widget.js"
+      data-account="4bpIZZ0oF7"
+      data-lang="en"
+    ></script>
+  </body>
+</html>
